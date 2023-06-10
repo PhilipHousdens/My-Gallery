@@ -56,36 +56,46 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           "My Gallery",
           style: TextStyle(
             color: Colors.black,
+            fontFamily: 'Montserrat-Bold',
             fontSize: 30,
           ),
         ),
         backgroundColor: const Color(0x00000fff),
         elevation: 0,
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          FanCarouselImageSlider(
-            imagesLink: natureImage,
-            isAssets: true,
-            autoPlay: false,
-            sliderHeight: double.infinity,
-          ),
-          FanCarouselImageSlider(
-            imagesLink: streetImage,
-            isAssets: true,
-            autoPlay: false,
-          ),
-          FanCarouselImageSlider(
-            imagesLink: architectureImage,
-            isAssets: true,
-            autoPlay: false,
-          ),
+      body: Center(
+        child: Container(
+          margin: EdgeInsets.only(top: 100),
+          child: SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+                FanCarouselImageSlider(
+                  imagesLink: natureImage,
+                  isAssets: true,
+                  autoPlay: false,
+                ),
+                FanCarouselImageSlider(
+                  imagesLink: streetImage,
+                  isAssets: true,
+                  autoPlay: false,
+                ),
+                FanCarouselImageSlider(
+                  imagesLink: architectureImage,
+                  isAssets: true,
+                  autoPlay: false,
+                ),
 
-        ],
+              ],
+            ),
+          ),
+        ),
       ),
       bottomNavigationBar: TabBar(
-
+        labelStyle: TextStyle(fontFamily: 'Montserrat-Regular'),
+        labelColor: Colors.black,
         controller: _tabController,
         tabs: [
           Tab(text: "Nature"),
