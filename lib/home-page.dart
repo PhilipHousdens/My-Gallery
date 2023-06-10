@@ -57,32 +57,28 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           style: TextStyle(
             color: Colors.black,
             fontFamily: 'Montserrat-Bold',
-            fontSize: 30,
+            fontSize: 25,
           ),
         ),
         backgroundColor: const Color(0x00000fff),
         elevation: 0,
-        //Action
         actions: [
-          // Row
           Row(
             children: [
-              //Profile
               IconButton(
-                onPressed: (){
-                  // Logic here
+                onPressed: () {
+                  // Add logic for profile icon onPressed event
                 },
-                icon: const Icon(Icons.person_outline),
+                icon: const Icon(Icons.person_outline, color: Colors.black, size: 30,),
               ),
-              // Adding Picture
               IconButton(
-                onPressed: (){
-                  // Logic here
+                onPressed: () {
+
                 },
-                icon: const Icon(Icons.add),
+                icon: const Icon(Icons.add, color: Colors.black, size: 30,),
               ),
             ],
-          )
+          ),
         ],
       ),
       body: Center(
