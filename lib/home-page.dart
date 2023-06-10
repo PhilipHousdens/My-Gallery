@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
+import 'image-slider.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -19,9 +20,13 @@ class MyHomePage extends StatelessWidget {
         elevation: 0,
       ),
       body: Container(
-        child: const TabBar(
+        child: MyImages(),
+      ),
+      bottomNavigationBar: const DefaultTabController(
+        length: 3,
+        child: TabBar(
           tabs: [
-            Tab(text: "Nature",),
+            Tab(text: "Nature"),
             Tab(text: "Street",),
             Tab(text: "Architecture",)
           ],
