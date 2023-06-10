@@ -84,6 +84,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         ],
       ),
       bottomNavigationBar: TabBar(
+        labelColor: Colors.black,
+        unselectedLabelColor: Colors.orange,
         controller: _tabController,
         tabs: [
           Tab(text: "Nature"),
