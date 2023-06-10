@@ -64,19 +64,25 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         elevation: 0,
         //Action
         actions: [
-          //Profile 
-          IconButton(
-            onPressed: (){
-            // Logic here
-            },
-            icon: const Icon(Icons.person_outline),
-          ),
-          IconButton(
-            onPressed: (){
-              // Logic here
-            },
-            icon: const Icon(Icons.add),
-          ),
+          // Row
+          Row(
+            children: [
+              //Profile
+              IconButton(
+                onPressed: (){
+                  // Logic here
+                },
+                icon: const Icon(Icons.person_outline),
+              ),
+              // Adding Picture
+              IconButton(
+                onPressed: (){
+                  // Logic here
+                },
+                icon: const Icon(Icons.add),
+              ),
+            ],
+          )
         ],
       ),
       body: Center(
