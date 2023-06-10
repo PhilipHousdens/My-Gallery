@@ -94,16 +94,19 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                   imagesLink: natureImage,
                   isAssets: true,
                   autoPlay: false,
+                  isClickable: false,
                 ),
                 FanCarouselImageSlider(
                   imagesLink: streetImage,
                   isAssets: true,
                   autoPlay: false,
+                  isClickable: false,
                 ),
                 FanCarouselImageSlider(
                   imagesLink: architectureImage,
                   isAssets: true,
                   autoPlay: false,
+                  isClickable: false,
                 ),
 
               ],
