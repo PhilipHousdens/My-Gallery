@@ -62,6 +62,22 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         ),
         backgroundColor: const Color(0x00000fff),
         elevation: 0,
+        //Action
+        actions: [
+          //Profile 
+          IconButton(
+            onPressed: (){
+            // Logic here
+            },
+            icon: const Icon(Icons.person_outline),
+          ),
+          IconButton(
+            onPressed: (){
+              // Logic here
+            },
+            icon: const Icon(Icons.add),
+          ),
+        ],
       ),
       body: Center(
         child: Container(
